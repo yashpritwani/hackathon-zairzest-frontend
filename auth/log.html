@@ -1,0 +1,196 @@
+<html>
+<title>ANNA DHAN</title>
+<link rel="shortcut icon" href="images/logo.svg">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta property="og:site_name" content="ANNA DHAN" />
+
+<link rel="stylesheet" href="/home/home.css">
+<link rel="stylesheet" href="log.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<header>
+<div class="banner">
+
+<span>
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-instagram"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+</span>
+</div>
+<nav class="nav" id="nav">
+<a href="/home/home.html" class="active"><i class="fa fa-home"></i> ANNA DHAN</a>
+<a href="/auth/sign.html"><i class="fa fa-handshake-o"></i> Join Us</a>
+<a href="/auth/log.html"><i class="fa fa-handshake-o"></i> Login</a>
+<div class="dropdown">
+<button class="dropbtn"><i class="fa fa-gear"></i> Services</button>
+  <div class="dropdown-content">
+    <a href="#">Bronze</a>
+    <a href="#">Silver</a>
+    <a href="#">Gold</a>
+  </div>
+</div> 
+<a href="/contact/contact.html"><i class="fa fa-phone"></i> Contact</a>
+<a href="/about/about.html"><i class="fa fa-user"></i> About</a>
+<a class="icon" id="icon" onclick="opennav()"><i class="fa fa-bars"></i></a>
+</nav>
+
+<div id="navbar">
+ <a href="/home/home.html" class="active"><i class="fa fa-home"></i> ANNA DHAN</a>
+<a href="/auth/sign.html"><i class="fa fa-handshake-o"></i> Join Us</a>
+<a href="/auth/log.html"><i class="fa fa-handshake-o"></i> Login</a>
+<div class="dropdown">
+<button class="dropbtn"><i class="fa fa-gear"></i> Service</button>
+  <div class="dropdown-content">
+    <a href="#">Bronze</a>
+    <a href="#">Silver</a>
+    <a href="#">Gold</a>
+  </div>
+</div> 
+<a href="/contact/contact.html"><i class="fa fa-phone"></i> Contact</a>
+<a href="/about/about.html"><i class="fa fa-user"></i> About</a>
+</div>
+</header>
+
+<div class="container">
+  <div class="forms-container">
+    <div class="signin-signup">
+      <form action="/login" method="post" class="sign-in-form">
+        <h2 class="title">Sign in</h2>
+        <div class="input-field">
+          <i class="fas fa-user"></i>
+          <input type="email" class="input" name="email" required placeholder="EMAIL"  />
+        </div>
+        <div class="input-field">
+          <i class="fas fa-lock"></i>
+          <input type="password" class="input" name="password" required placeholder="PASSWORD" />
+        </div>
+        <input type="submit" value="Login" class="btn solid" />
+        <p class="social-text">Or Sign in with social platforms</p>
+        <div class="social-media">
+          <a href="#" class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </form>
+
+      <form action="/signup" method="post" class="sign-up-form">
+        <h2 class="title">Sign up</h2>
+        <div class="input-field">
+          <i class="fas fa-user"></i>
+          <input type="text" class="input" name="name" placeholder="Username" />
+        </div>
+        <div class="input-field">
+          <i class="fas fa-envelope"></i>
+          <input type="email" class="input" name="email" placeholder="Email" />
+        </div>
+        <div class="input-field">
+          <i class="fas fa-envelope"></i>
+          <input type="text" class="input" name="cno" required placeholder="CONTACT NUMBER"/>
+        </div>
+        <div class="input-field">
+          <i class="fas fa-envelope"></i>
+          <input type="text" class="input" name="dob" required placeholder="DOB(ddmmyyyy)Numberic"/>
+        </div>
+        <div class="input-field">
+          <i class="fas fa-lock"></i>
+          <input type="password" class="input" name="password" required placeholder="PASSWORD"/>
+        </div>
+        <div class="input-field">
+          <i class="fas fa-lock"></i>
+          <input type="password" class="input" name="cpassword" required placeholder="CONFIRM PASSWORD"/>
+        </div>
+        <input type="submit" class="btn" value="Sign up" />
+        <p class="social-text">Or Sign up with social platforms</p>
+        <div class="social-media">
+          <a href="#" class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="panels-container">
+    <div class="panel left-panel">
+      <div class="content">
+        <h3>New here ?</h3>
+        <p>
+          Join with us and take yourself for a journey of success.
+        </p>
+        <button class="btn transparent" id="sign-up-btn">
+          Sign up
+        </button>
+      </div>
+      <img src="log.svg" class="image" alt="" />
+    </div>
+    <div class="panel right-panel">
+      <div class="content">
+        <h3>One of us ?</h3>
+        <p>
+          Login and continue your journey of gaining knowledge with us.
+        </p>
+        <button class="btn transparent" id="sign-in-btn">
+          Sign in
+        </button>
+      </div>
+      <img src="register.svg" class="image" alt="" />
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer">
+  <div class="row">
+  <a href="#"><i class="fa fa-facebook"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+  <a href="#"><i class="fa fa-youtube"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  </div>
+  <div class="row">
+  <ul>
+  <li><a href="#">Contact us</a></li>
+  <li><a href="#">Our Services</a></li>
+  <li><a href="#">Privacy Policy</a></li>
+  <li><a href="#">Terms & Conditions</a></li>
+  <li><a href="#">Career</a></li>
+  </ul>
+  </div>
+  <div class="row">
+  ANNADHAN Copyright © 2021 AnnaDhan - All rights reserved || Designed By: Yash 
+  </div>
+  </div>
+  </footer>
+
+  <script src="log.js"></script>
+  <script src="/home/home.js"></script>
+
+
+</body>
+</html>
